@@ -1,0 +1,21 @@
+$react-removable-list-options: () !default;
+
+.react-removable-list {
+  .is-item {
+    display: block;
+  }
+  .is-action {
+    position: relative;
+  }
+  &__action {
+    position: absolute;
+    display: block;
+    width:100%;
+    height:100%;
+    opacity: 0.01;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
