@@ -6,11 +6,12 @@
 npm install -S @feizheng/react-removable-list
 ```
 ## properties
-| property        | type | description |
-| --------------- | ---- | ----------- |
-| className       | -    | -           |
-| value           | -    | -           |
-| onChange        | -    | -           |
+| property  | type | description |
+| --------- | ---- | ----------- |
+| className | -    | -           |
+| value     | -    | -           |
+| onChange  | -    | -           |
+| templte   | -    | -           |
 
 ## usage
 1. import css
