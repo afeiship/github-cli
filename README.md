@@ -22,35 +22,40 @@ npm install -S @feizheng/react-removable-list
   ```
 2. import js
   ```js
-  import React from 'react';
+  import ReactRemovableList from '../src/main';
   import ReactDOM from 'react-dom';
-  import ReactRemovableList from '@feizheng/react-removable-list';
-  
-  // your app:
-  class App extends React.Component{
-    render(){
+  import React from 'react';
+  import './assets/style.scss';
+
+  class App extends React.Component {
+    state = {
+      items: [
+        { value: 'k1', label: 'label111' },
+        { value: 'k2', label: 'label222' },
+        { value: 'k3', label: 'label333' },
+        { value: 'k4', label: 'label444' }
+      ]
+    };
+
+    onChange1 = (inEvent) => {
+      console.log('change event:', inEvent.target.value);
+    };
+
+    render() {
       return (
-        <ReactRemovableList />
-      )
+        <div className="app-container">
+          <ReactRemovableList
+            onChange={this.onChange1}
+            value={this.state.items}
+          />
+        </div>
+      );
     }
   }
 
-  // render to dom:
-  ReactDOM.render(<App/>, document.getElementById('app'));
+  ReactDOM.render(<App />, document.getElementById('app'));
+
   ```
 
 ## documentation
 - https://afeiship.github.io/react-removable-list/
-
-## resources
-- https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
-- https://www.valentinog.com/blog/react-webpack-babel/
-- https://jestjs.io/docs/en/tutorial-react#snapshot-testing-with-mocks-enzyme-and-react-16
-- https://testing-library.com/docs/react-testing-library/api
-
-## todos
-- [ ] Add: semver number for every build files.
-- [ ] Add: need output css files.
-- [ ] Add: PWA support for docs.
-- [ ] Add: source.map file for dist(`you can upload for production debug`).
-- [ ] BUG: npm run dev will clean dist.
