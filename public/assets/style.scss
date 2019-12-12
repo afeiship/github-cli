@@ -4,8 +4,7 @@
 }
 html,
 body,
-#app,
-.app-container {
+#app {
   height: 100%;
 }
 
@@ -13,22 +12,27 @@ body,
 
 .app-container {
   padding: 50px;
-  .button {
-    background: #3cc51f;
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    color: #fff;
+  .react-removable-list {
+    border: 1px solid springgreen;
     padding: 20px;
-    border: none;
-
-    &:active {
-      background: darken(#3cc51f, 10%);
-    }
-
-    &:focus {
-      outline: none;
+    width: 50%;
+    margin: 50px auto;
+    .is-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 30px;
+      border-bottom: 1px solid #ccc;
+      padding: 0 10px;
+      transition: all 0.3s;
+      &:hover {
+        background: #eee;
+      }
+      button {
+        padding: 5px;
+        cursor: pointer;
+        user-select: none;
+      }
     }
   }
 }

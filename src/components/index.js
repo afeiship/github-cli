@@ -11,7 +11,7 @@ const DEFAULT_TEMPLATE = ({ item }, cb) => {
     <div className="is-item" key={item.value} value={item.value}>
       {item.label}
       <button onClick={cb} className="is-action">
-        REMOVE
+        x
       </button>
     </div>
   );
