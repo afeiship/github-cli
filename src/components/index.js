@@ -21,7 +21,7 @@ export default class extends Component {
   static displayName = CLASS_NAME;
   static propTypes = {
     className: PropTypes.string,
-    value: PropTypes.array,
+    items: PropTypes.array,
     template: PropTypes.func,
     onChange: PropTypes.func
   };
@@ -32,9 +32,10 @@ export default class extends Component {
     onChange: noop
   };
 
-  static getDerivedStateFromProps({ value }, inState) {
-    if (value !== inState.value) {
-      return { value };
+  static getDerivedStateFromProps(inProps, inState) {
+    const { items } = inProps;
+    if (items !== inState.value) {
+      return { value: items };
     }
     return null;
   }
@@ -42,7 +43,7 @@ export default class extends Component {
   constructor(inProps) {
     super(inProps);
     this.state = {
-      value: inProps.value
+      value: inProps.items
     };
   }
 
@@ -67,7 +68,7 @@ export default class extends Component {
   };
 
   render() {
-    const { className, value, template, ...props } = this.props;
+    const { className, items, template, ...props } = this.props;
     return (
       <div
         data-component={CLASS_NAME}

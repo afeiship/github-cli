@@ -9,7 +9,7 @@ npm install -S @feizheng/react-removable-list
 | property  | type | description |
 | --------- | ---- | ----------- |
 | className | -    | -           |
-| value     | -    | -           |
+| items     | -    | -           |
 | onChange  | -    | -           |
 | templte   | -    | -           |
 
@@ -47,7 +47,7 @@ npm install -S @feizheng/react-removable-list
         <div className="app-container">
           <ReactRemovableList
             onChange={this.onChange1}
-            value={this.state.items}
+            items={this.state.items}
           />
         </div>
       );

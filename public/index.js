@@ -22,7 +22,7 @@ class App extends React.Component {
       <div className="app-container">
         <ReactRemovableList
           onChange={this.onChange1}
-          value={this.state.items}
+          items={this.state.items}
         />
       </div>
     );
