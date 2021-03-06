@@ -13,6 +13,12 @@
 npm install @jswork/github-cli
 ```
 
+## dependencies
+```shell
+# 7z
+brew install p7zip
+```
+
 ## usage
 ~~~
 __USAGE__
