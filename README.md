@@ -6,7 +6,7 @@
 [![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
-![snapshot](https://tva1.sinaimg.cn/large/008eGmZEgy1goa884s54jj313g06udgn.jpg)
+![snapshot](https://tva1.sinaimg.cn/large/0081Kckwgy1gk87ynhkbaj30u60asasp.jpg)
 
 ## installation
 ```shell
@@ -20,6 +20,7 @@ Usage: github-cli [options]
 Options:
   -V, --version  output the version number
   -p, --pages    Set pages to master:docs.
+  -d, --delete   Delete pages.
   -h, --help     display help for command
 ~~~
 

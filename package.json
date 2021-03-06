@@ -1,6 +1,6 @@
 {
   "name": "@jswork/github-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Github cli.",
   "homepage": "https://github.com/afeiship/github-cli",
   "author": {
@@ -40,7 +40,8 @@
     "release-it": "^14.2.1"
   },
   "keywords": [
-    "boilerplate",
-    "cli"
+    "react",
+    "removable",
+    "list"
   ]
 }
