@@ -51,7 +51,7 @@ nx.declare({
       if (program.pages) {
         this.request('DELETE').then((re) => {
           this.request('POST').then((res) => {
-            console.log('res:', res);
+            console.log(res);
           });
         });
       }
