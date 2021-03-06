@@ -1,9 +1,25 @@
-import baseConfig from '.';
-import merge from 'webpack-merge';
-import { configs, inputs, outputs, loaders, plugins } from '@feizheng/webpack-lib-kits';
+(function () {
+  'use strict';
 
-export default merge(baseConfig, {
-  entry: inputs.docs(),
-  output: outputs.docs(),
-  plugins: [plugins.clean(), plugins.html()]
-});
+  const gulp = require('gulp');
+  const exec = require('child_process').execSync;
+  const $ = require('gulp-load-plugins')({
+    pattern: ['gulp-*', 'gulp.*', 'del', '@jswork/gulp-*']
+  });
+
+  const usage = exec('github-cli -h').toString().trim();
+
+  gulp.task('docs', function () {
+    return gulp
+      .src('docs/template.md')
+      .pipe($.replace('__USAGE__', usage))
+      .pipe(
+        $.rename(function (path) {
+          path.dirname = '..';
+          path.basename = 'README';
+          return path;
+        })
+      )
+      .pipe(gulp.dest('dist'));
+  });
+})();

@@ -15,12 +15,7 @@ npm install @jswork/github-cli
 
 ## usage
 ~~~
-Usage: github-cli [options]
-
-Options:
-  -V, --version  output the version number
-  -p, --pages    Set pages to master:docs.
-  -h, --help     display help for command
+__USAGE__
 ~~~
 
 ## license
