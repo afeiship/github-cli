@@ -23,7 +23,10 @@ const headers = {
 };
 
 program.version(version);
-program.option('-p, --pages', 'Set pages to master:docs.').parse(process.argv);
+program
+  .option('-p, --pages', 'Set pages to master:docs.')
+  .option('-d, --delete', 'Delete pages.')
+  .parse(process.argv);
 
 nx.declare({
   statics: {
@@ -36,25 +39,30 @@ nx.declare({
     init() {},
     request(inMethod) {
       const fullname = gitUrl.data['full_name'];
+      const body =
+        inMethod === 'POST'
+          ? JSON.stringify({
+              source: {
+                branch: 'master',
+                path: '/docs'
+              }
+            })
+          : null;
+
       return fetch(`https://api.github.com/repos/${fullname}/pages`, {
         headers,
         method: inMethod,
-        body: JSON.stringify({
-          source: {
-            branch: 'master',
-            path: '/docs'
-          }
-        })
+        body
       }).then((res) => res.json());
     },
     start() {
       if (program.pages) {
         this.request('DELETE').then((re) => {
-          this.request('POST').then((res) => {
-            console.log(res);
-          });
+          this.request('POST').then(console.log);
         });
       }
+
+      program.delete && this.request('DELETE').then(console.log);
     }
   }
 });
