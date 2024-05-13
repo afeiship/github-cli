@@ -1,47 +1,39 @@
 {
-  "name": "@jswork/github-cli",
-  "version": "1.0.2",
+  "name": "github-cli",
+  "version": "1.0.0",
+  "private": true,
   "description": "Github cli.",
-  "homepage": "https://github.com/afeiship/github-cli",
-  "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
-  },
+  "module": "index.ts",
+  "type": "module",
   "bin": {
-    "github-cli": "bin/index.js"
+    "ghc": "./lib/index.ts",
+    "github-cli": "./lib/index.ts"
   },
   "scripts": {
-    "build": "gulp",
-    "release": "release-it"
+    "bn:link": "bun link",
+    "start": "bun lib/index.ts",
+    "release": "release-it",
+    "prepare": "husky install",
+    "pretty": "prettier --write ./lib"
   },
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "@jswork/next": "^1.0.2",
-    "@jswork/next-absolute-package": "^1.0.1",
-    "@jswork/next-git-url": "^1.0.2",
-    "chalk": "^4.1.0",
-    "commander": "^6.2.0",
-    "gulp-rename": "^2.0.0",
-    "node-fetch": "^2.6.1",
-    "require-dir": "^1.2.0",
-    "yargs": "^13.2.4"
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run pretty"
+    ]
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
+  "prettier": "@jswork/style-guide/prettier",
   "devDependencies": {
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-load-plugins": "^2.0.5",
-    "gulp-replace": "^1.0.0",
-    "prettier": "^2.1.2",
-    "release-it": "^14.2.1"
+    "@jswork/style-guide": "^1.0.1",
+    "@types/bun": "latest",
+    "husky": "^9.0.6",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.4"
   },
-  "keywords": [
-    "react",
-    "removable",
-    "list"
-  ]
+  "dependencies": {
+    "@jswork/next": "^1.2.2",
+    "commander": "^11.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
 }

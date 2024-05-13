@@ -1,0 +1,12 @@
+name: replace-in-files
+files:
+  - 'src/*.*'
+  - '.*'
+  - '*'
+  - '!node_modules'
+  - '!rif.config.yaml'
+replacements:
+  - from: /bun-cli-description/g
+    to: Github cli.
+  - from: /bun-cli/g
+    to: ${PROJECT_NAME}
