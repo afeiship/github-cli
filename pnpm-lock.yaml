@@ -20,6 +20,9 @@ importers:
       '@jswork/next-fetch':
         specifier: ^1.2.48
         version: 1.2.48
+      '@jswork/read-pkg-json':
+        specifier: ^1.0.3
+        version: 1.0.3
       commander:
         specifier: ^11.1.0
         version: 11.1.0
@@ -113,6 +116,9 @@ packages:
 
   '@jswork/pipe@1.0.4':
     resolution: {integrity: sha512-dGpOBYI1/zjY+gxph4Cl7aja1ddBVnxHaw3Zq0jF+eQPXpafzmFuEvtZpZxEk28W6467dCTYNBBTUJpUec8Tug==, tarball: https://registry.npmmirror.com/@jswork/pipe/-/pipe-1.0.4.tgz}
+
+  '@jswork/read-pkg-json@1.0.3':
+    resolution: {integrity: sha512-RPFpPEHQhA9CuZZb7S+rO2HTl227Gbon2i5Nuc9Dq8fC5accLEIM2FPo5dTGYYhEbHsoYlDuQCaVQNDnKdvrVw==, tarball: https://registry.npmmirror.com/@jswork/read-pkg-json/-/read-pkg-json-1.0.3.tgz}
 
   '@jswork/style-guide@1.0.1':
     resolution: {integrity: sha512-6GOrqqt4xKwvBfA7/dwkLkmwVSVqXfoD4JBTYNCLOYFScjiUYTkTyZcmAQysGG4QG8Q85Ti4C9gBJ1Tsj/kBoA==, tarball: https://registry.npmmirror.com/@jswork/style-guide/-/style-guide-1.0.1.tgz}
@@ -464,6 +470,8 @@ snapshots:
   '@jswork/next@1.2.2': {}
 
   '@jswork/pipe@1.0.4': {}
+
+  '@jswork/read-pkg-json@1.0.3': {}
 
   '@jswork/style-guide@1.0.1': {}
 

@@ -1,13 +1,11 @@
 #! /usr/bin/env bun
 
 import { Command, Option } from 'commander';
-import { createRequire } from 'module';
 import gitInfo from '@jswork/git-info';
+import readPkgJson from '@jswork/read-pkg-json';
 import './bootstrap.ts';
 
-const __dirname = new URL('./', import.meta.url).pathname;
-const require = createRequire(__dirname);
-const pkg = require('./package.json');
+const pkg = readPkgJson();
 const program = new Command();
 
 program.version(pkg.version);
