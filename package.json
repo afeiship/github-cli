@@ -25,13 +25,18 @@
   "devDependencies": {
     "@jswork/style-guide": "^1.0.1",
     "@types/bun": "latest",
+    "@types/node": "^20.12.11",
     "husky": "^9.0.6",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4"
   },
   "dependencies": {
+    "@jswork/git-info": "^1.0.4",
+    "@jswork/http-schema": "^2.2.5",
     "@jswork/next": "^1.2.2",
-    "commander": "^11.1.0"
+    "@jswork/next-fetch": "^1.2.48",
+    "commander": "^11.1.0",
+    "form-data": "^4.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
