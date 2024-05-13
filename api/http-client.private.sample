@@ -1,0 +1,6 @@
+{
+  "dev": {
+    "token": "YOUR_GITHUB_TOKEN_HERE",
+    "filename":"http-client.private.env.json"
+  }
+}
