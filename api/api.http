@@ -1,0 +1,18 @@
+### 设置删除操作
+DELETE https://api.github.com/repos/afeiship/github-cli/pages HTTP/1.1
+Accept: application/vnd.github.switcheroo-preview+json
+Authorization: token {{ $env.GITHUB_API_TOKEN }}
+Content-Type: application/vnd.api+json
+
+### 设置创建操作
+POST https://api.github.com/repos/afeiship/github-cli/pages HTTP/1.1
+Accept: application/vnd.github.switcheroo-preview+json
+Authorization: token {{ $env.GITHUB_API_TOKEN }}
+Content-Type: application/vnd.api+json
+
+{
+  "source": {
+    "branch": "main",
+    "path":"/docs"
+  }
+}
