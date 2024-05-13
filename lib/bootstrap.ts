@@ -20,6 +20,7 @@ const opts = {
     return config;
   },
 };
+
 httpSchema(
   {
     baseURL: 'https://api.github.com',
