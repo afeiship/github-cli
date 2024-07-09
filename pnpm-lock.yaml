@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@jswork/git-info':
-        specifier: ^1.0.4
-        version: 1.0.4
+        specifier: ^1.0.5
+        version: 1.0.5
       '@jswork/http-schema':
         specifier: ^2.2.5
         version: 2.2.5
@@ -18,8 +18,8 @@ importers:
         specifier: ^1.2.2
         version: 1.2.2
       '@jswork/next-fetch':
-        specifier: ^1.2.48
-        version: 1.2.48
+        specifier: ^1.2.49
+        version: 1.2.49
       '@jswork/read-pkg-json':
         specifier: ^1.0.3
         version: 1.0.3
@@ -34,8 +34,8 @@ importers:
         version: 5.4.5
     devDependencies:
       '@jswork/style-guide':
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ^1.0.3
+        version: 1.0.3
       '@types/bun':
         specifier: latest
         version: 1.1.2
@@ -60,8 +60,8 @@ packages:
   '@jswork/fetch@1.0.13':
     resolution: {integrity: sha512-YMegvLYiRgMq5B+px6VMcPmwowDPwLxoY5kuBSHsoiwN96NS0mGJhb3iLAVKZXu4BUxHBKQ5fCFpuxujmWGLIQ==, tarball: https://registry.npmmirror.com/@jswork/fetch/-/fetch-1.0.13.tgz}
 
-  '@jswork/git-info@1.0.4':
-    resolution: {integrity: sha512-8S11qWSeT6yI0ek34DcGj/pz9/ZMTmaaDKOEC+jT/y+UdlMFQABPfhTSEqqYamUGE3qi+wqctJ/7e19kUj9f5w==, tarball: https://registry.npmmirror.com/@jswork/git-info/-/git-info-1.0.4.tgz}
+  '@jswork/git-info@1.0.5':
+    resolution: {integrity: sha512-BJOKsh09cBAL9gLWouOsoIJjVHFeDizJJ9o1/sEckGWIdOJAOMeAntU/g9sHCkU+DjCyWimutXzROHpBjIspXQ==, tarball: https://registry.npmmirror.com/@jswork/git-info/-/git-info-1.0.5.tgz}
 
   '@jswork/http-data-parser@1.0.10':
     resolution: {integrity: sha512-HJMXt+zTNfhgBQAzTGiwI/1usVrowWUF7y+JJUMfYEVYhlwB9xtV8oibZl7aONIUupq1LYsNoBi9GOb7zZ2qOQ==, tarball: https://registry.npmmirror.com/@jswork/http-data-parser/-/http-data-parser-1.0.10.tgz}
@@ -90,8 +90,8 @@ packages:
   '@jswork/next-difference@1.0.2':
     resolution: {integrity: sha512-XtpsVnQXLBdSPCMA10FOap9zEdFNT7Fa0k/d+5l+EOdgSu6LPJSJ/h2X6H+KzNQHBMaMDet5N5QeEA7jzUkoMg==, tarball: https://registry.npmmirror.com/@jswork/next-difference/-/next-difference-1.0.2.tgz}
 
-  '@jswork/next-fetch@1.2.48':
-    resolution: {integrity: sha512-cX6H3Hy/onR/y0T8mgJK4f/7FX5+Wt/Tynh7VbDAaSBrhnI4FD5M748HveTo31N42H5hup0vzYHvdJ6dRHQK4g==, tarball: https://registry.npmmirror.com/@jswork/next-fetch/-/next-fetch-1.2.48.tgz}
+  '@jswork/next-fetch@1.2.49':
+    resolution: {integrity: sha512-t3QILfwEf56pGEcseJ4a8eW/ggdNfuqdxbmrjFwInxkN5PS/DMLyVQOYh3MkFjtpSXPThxQQHuFlvmCr2J4u8Q==, tarball: https://registry.npmmirror.com/@jswork/next-fetch/-/next-fetch-1.2.49.tgz}
 
   '@jswork/next-filter-map@1.2.3':
     resolution: {integrity: sha512-0e7c1bhc9Juqm54uFUjexPt+uqYDvUFpXY84LmfdFumPcdQpOoa/MmebDHqWR9mMNxLhkJQFlOYOoR+1YQxP0A==, tarball: https://registry.npmmirror.com/@jswork/next-filter-map/-/next-filter-map-1.2.3.tgz}
@@ -120,8 +120,8 @@ packages:
   '@jswork/read-pkg-json@1.0.3':
     resolution: {integrity: sha512-RPFpPEHQhA9CuZZb7S+rO2HTl227Gbon2i5Nuc9Dq8fC5accLEIM2FPo5dTGYYhEbHsoYlDuQCaVQNDnKdvrVw==, tarball: https://registry.npmmirror.com/@jswork/read-pkg-json/-/read-pkg-json-1.0.3.tgz}
 
-  '@jswork/style-guide@1.0.1':
-    resolution: {integrity: sha512-6GOrqqt4xKwvBfA7/dwkLkmwVSVqXfoD4JBTYNCLOYFScjiUYTkTyZcmAQysGG4QG8Q85Ti4C9gBJ1Tsj/kBoA==, tarball: https://registry.npmmirror.com/@jswork/style-guide/-/style-guide-1.0.1.tgz}
+  '@jswork/style-guide@1.0.3':
+    resolution: {integrity: sha512-4PJmRJiwa/qLC/00CV7vLTOuiktKTnG7oWYiRKLMlR2dasixB8HnZFEVgrdmh0VX7fsgcTovJScAHlzkZOw/eg==, tarball: https://registry.npmmirror.com/@jswork/style-guide/-/style-guide-1.0.3.tgz}
 
   '@types/bun@1.1.2':
     resolution: {integrity: sha512-pRBDD3EDqPf83qe95i3EpYu5G2J8bbb78a3736vnCm2K8YWtEE5cvJUq2jkKvJhW07YTfQtbImywIwRhWL8z3Q==, tarball: https://registry.npmmirror.com/@types/bun/-/bun-1.1.2.tgz}
@@ -408,7 +408,7 @@ snapshots:
 
   '@jswork/fetch@1.0.13': {}
 
-  '@jswork/git-info@1.0.4': {}
+  '@jswork/git-info@1.0.5': {}
 
   '@jswork/http-data-parser@1.0.10': {}
 
@@ -444,7 +444,7 @@ snapshots:
 
   '@jswork/next-difference@1.0.2': {}
 
-  '@jswork/next-fetch@1.2.48':
+  '@jswork/next-fetch@1.2.49':
     dependencies:
       '@jswork/enhanced-fetch': 1.0.29
       '@jswork/next-abstract-request': 1.1.7
@@ -473,7 +473,7 @@ snapshots:
 
   '@jswork/read-pkg-json@1.0.3': {}
 
-  '@jswork/style-guide@1.0.1': {}
+  '@jswork/style-guide@1.0.3': {}
 
   '@types/bun@1.1.2':
     dependencies:
